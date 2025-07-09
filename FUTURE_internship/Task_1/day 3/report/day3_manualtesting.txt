@@ -1,0 +1,30 @@
+Task 1 – Day 3: Manual Testing – SQL Injection, XSS, and Authentication Flaws
+
+Objective:
+Manually exploit vulnerable parts of DVWA to demonstrate understanding of common OWASP Top 10 web vulnerabilities.
+
+Tools Used:
+- Firefox
+- DVWA (localhost)
+- Kali Terminal (for screenshots and setup)
+
+1️⃣ SQL Injection
+- Payload: 1' OR '1'='1
+- Result: User details shown without proper authentication
+- Screenshot: task1_day3_sql_injection.png
+
+2️⃣ XSS (Reflected)
+- Payload: <script>alert('XSS')</script>
+- Result: JavaScript popup executed in browser
+- Screenshot: task1_day3_xss_popup.png
+
+3️⃣ Authentication Bypass
+- Username: admin' OR '1'='1
+- Password: 1234
+- Result: Login bypassed using SQL logic flaw
+- Screenshot: task1_day3_auth_bypass.png
+
+Notes:
+- All tests were conducted with DVWA security level set to 'Low'
+- No external tools were needed — everything done inside Kali
+- These vulnerabilities represent real threats in poorly coded apps

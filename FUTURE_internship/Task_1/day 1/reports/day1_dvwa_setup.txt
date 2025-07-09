@@ -1,0 +1,49 @@
+📅 Task 1 – Day 1: DVWA Installation and Setup
+
+Objective:  
+Install and configure DVWA (Damn Vulnerable Web Application) locally on Kali Linux using Apache, PHP, and MariaDB.
+
+----------------------------
+
+✅ Tools Used:
+
+- Apache2 (Web Server)
+- MariaDB (Database)
+- PHP (Server-side language)
+- Git (to clone DVWA)
+- Firefox (Browser for testing)
+
+----------------------------
+
+🛠️ Steps Completed:
+
+1. Installed required packages:
+   - apache2, mariadb-server, php, php-mysqli, php-gd, php-xml, php-curl, libapache2-mod-php, git
+2. Enabled PHP module in Apache
+3. Cloned DVWA to /var/www/html/DVWA
+4. Created DVWA database and user (dvwauser / dvwapass)
+5. Configured config.inc.php with correct DB credentials
+6. Enabled PHP error reporting to fix blank screen issue
+7. Accessed DVWA via browser at: http://localhost/DVWA/
+8. Clicked "Create/Reset Database" to initialize DVWA
+9. Logged in using default credentials
+
+----------------------------
+
+🔐 Login Credentials:
+
+- Username: admin
+- Password: password
+
+----------------------------
+
+📸 Screenshot:
+
+Saved as: task1_day1_dvwa_login.png inside ../screenshots/
+
+----------------------------
+
+🧠 Notes:
+
+- PHP errors were hidden by default. Enabling display_errors = On fixed the blank page issue.
+- DVWA is now working locally.

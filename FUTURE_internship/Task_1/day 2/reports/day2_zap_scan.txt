@@ -1,0 +1,50 @@
+Task 1 – Day 2: Web Application Security Testing using OWASP ZAP
+
+Objective:
+Use OWASP ZAP to identify OWASP Top 10 vulnerabilities in DVWA.
+
+----------------------------
+
+Tools Used:
+- OWASP ZAP
+- Firefox (manual proxy configured)
+- DVWA (http://localhost/DVWA)
+- Apache2, MariaDB
+
+----------------------------
+
+Steps Performed:
+
+1. Installed ZAP using: sudo apt install zaproxy
+2. Set Firefox proxy to 127.0.0.1:8080 and enabled "Use for all protocols"
+3. Started DVWA (Apache2 + MariaDB) and set Security Level to Low
+4. Browsed vulnerable pages: SQLi, XSS, CSRF, etc.
+5. ZAP captured DVWA under “Sites”
+6. Performed Active Scan on http://localhost/DVWA
+7. ZAP discovered OWASP Top 10 vulnerabilities
+
+----------------------------
+
+Vulnerabilities Detected:
+
+- SQL Injection
+- Reflected Cross-Site Scripting (XSS)
+- Command Injection
+- Missing X-Frame-Options header
+- Cookie without HttpOnly flag
+- Cross-Site Request Forgery (CSRF)
+- Server Disclosure
+- Broken Authentication
+- Security Misconfigurations
+
+----------------------------
+
+Screenshot Saved:
+~/internship-reports/Task_1/screenshots/task1_day2_zap_scan.png
+
+----------------------------
+
+Notes:
+- Manually browsing DVWA pages is important before scanning
+- Firefox must allow localhost proxy (set network.proxy.allow_hijacking_localhost = true)
+- ZAP is an effective and easy-to-use scanner for beginners

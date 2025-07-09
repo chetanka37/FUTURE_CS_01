@@ -1,0 +1,88 @@
+# Task 1 – Web Application Security Testing
+
+🔹 Internship Track: Cyber Security (Track Code: CS)  
+🔹 Task Name: Web Application Security Testing  
+🔹 Platform: Kali Linux  
+🔹 Web App: DVWA (Damn Vulnerable Web Application)  
+🔹 Tools Used: Apache2, MariaDB, Firefox, OWASP ZAP
+
+---
+
+## ✅ Objective:
+Conduct security testing on DVWA to identify vulnerabilities like SQL Injection, XSS, and Authentication flaws.
+
+---
+
+## 🧰 Tools Used:
+- Firefox (Manual browsing and testing)
+- OWASP ZAP (Automated vulnerability scanning)
+- DVWA running on Apache2/MariaDB
+- Kali Terminal for screenshots and config
+
+---
+
+## 🧪 Activities Performed:
+
+### 🔸 Day 1 – DVWA Setup:
+- Installed Apache, PHP, MariaDB
+- Cloned DVWA into `/var/www/html/`
+- Created DB `dvwa` and user `dvwauser`
+- Set config file and launched DVWA in Firefox
+- Took screenshot of successful login
+
+### 🔸 Day 2 – Automated Vulnerability Scanning using ZAP:
+- Installed and started ZAP
+- Configured Firefox proxy (127.0.0.1:8080)
+- Browsed DVWA to allow ZAP to capture
+- Performed **Active Scan** on DVWA
+- Discovered OWASP Top 10 vulnerabilities (XSS, SQLi, headers, etc.)
+- Saved ZAP Alerts screenshot
+
+### 🔸 Day 3 – Manual Testing (SQLi, XSS, Auth Bypass):
+- Performed SQL Injection on `vulnerabilities/sqli/`
+- Executed Reflected XSS on `vulnerabilities/xss_r/`
+- Bypassed login via SQL logic on `vulnerabilities/brute/`
+- Captured proof screenshots of each test
+
+---
+
+## 📸 Screenshots:
+
+- task1_day1_dvwa_login.png  
+- task1_day2_zap_scan.png  
+- task1_day3_sql_injection.png  
+- task1_day3_xss_popup.png  
+- task1_day3_auth_bypass.png
+
+---
+
+## 📝 Reports Written:
+
+- day1_dvwa_setup.txt  
+- task1_day2_zap_scan.txt  
+- task1_day3_manual_testing.txt
+
+---
+
+## 📂 Folder Structure:
+
+~/internship-reports/Task_1/
+├── reports/
+│   ├── day1_dvwa_setup.txt
+│   ├── task1_day2_zap_scan.txt
+│   └── task1_day3_manual_testing.txt
+└── screenshots/
+    ├── task1_day1_dvwa_login.png
+    ├── task1_day2_zap_scan.png
+    ├── task1_day3_sql_injection.png
+    ├── task1_day3_xss_popup.png
+    └── task1_day3_auth_bypass.png
+
+---
+
+## 🎯 Task Outcome:
+- Successfully identified OWASP Top 10 vulnerabilities
+- Learned manual and automated testing
+- Demonstrated security flaws in a vulnerable app
+
+---
